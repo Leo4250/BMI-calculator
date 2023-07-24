@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+  </head>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <body>
+    <div class="container-sm">
+      <div class="bmi-info">
+        <h2>What is BMI?</h2>
+        <p>
+          BMI stands for Body Mass Index. It is a measure that uses your weight
+          and height to assess whether you have a healthy body weight. BMI is a
+          useful tool, but it has limitations and does not account for factors
+          like muscle mass and body composition.
+        </p>
+        <h2>Interpreting BMI Results</h2>
+        <p>
+          - BMI less than 18.5: Underweight<br />
+          - BMI 18.5 to 24.9: Normal weight<br />
+          - BMI 25 to 29.9: Overweight<br />
+          - BMI 30 or greater: Obese<br />
+        </p>
+        <h2>Health Risks Associated with BMI</h2>
+        <p>
+          Both low and high BMI levels can be associated with health risks.
+          Underweight individuals may have weakened immune systems, bone loss,
+          and fertility issues. On the other hand, obesity can lead to a higher
+          risk of heart disease, type 2 diabetes, and other chronic conditions.
+        </p>
+      </div>
+      <h1>BMI Information</h1>
+      <div class="bmi-calculator">
+          <h2>BMI Calculator</h2>
+          <div class="input-group">
+              <label for="weight">Weight:</label>
+              <input type="number" id="weight" placeholder="Enter your weight" />
+              <select id="weightUnit">
+                  <option value="kg">kg</option>
+                  <option value="lb">lb</option>
+              </select>
+          </div>
+          <div class="input-group">
+              <label for="height">Height:</label>
+              <input type="number" id="height" placeholder="Enter your height" />
+              <select id="heightUnit">
+                  <option value="cm">cm</option>
+                  <option value="in">in</option>
+              </select>
+          </div>
+          <button id="calculateBtn">Calculate Your BMI</button>
+          <div id="result"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
