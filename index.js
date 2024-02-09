@@ -1,3 +1,4 @@
+alert("This is a simple bmi app")
 document.getElementById('calculateBtn').addEventListener('click', function () {
     const weight = parseFloat(document.getElementById('weight').value);
     const weightUnit = document.getElementById('weightUnit').value;
